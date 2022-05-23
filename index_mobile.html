@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset='UTF-8' />
+<link rel="stylesheet" type="text/css" href="main_mobile.css" />
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+<script src="Chart.js"></script>
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
+</head>
+<body>
+
+<div id="trouble">
+<a href="javascript:alert('If you are facing problems with graphics, try to disable hardware acceleration of your browser in use.');">
+	<img src="Settings-2.svg" style="position:relative;top:1px;" height="16"/>
+</a>
+</div>
+<div id="generalFooter">
+		
+         Page created by <b>Dimitrios Varvaras</b> using <a class="footer" href="https://jquery.com/">jQuery</a>, <a class="footer" href="https://www.chartjs.org/">Chart.js</a> and 
+		 <a class="footer" href="https://www.kameleon.pics/free-icons-pack.html">Kameleon icons</a>
+		
+&ensp;&ensp; 
+</div>
+<div id="generalHeader">
+		<a href="#about" class="header">
+         Dimitrios
+		 <img src="Coding-Html.svg" style="position:relative;top:5px;" height="48"/>
+		  Varvaras
+		</a>
+		<a href="https://drive.google.com/file/d/1CV5n-cTyxVC4qlMFPGK7lFrpax1fhNnv/view?usp=sharing">
+			<div id="cvHeader">
+				<img src="Paper-Plane.svg" style="position:relative;top:4px;left:1px;" height="48"/>
+			</div>
+		</a>		
+</div>
+
+
+
+
+<div id="page-wrap">
+    <div id="pageAbout" align="center">
+	<br />
+        <br /><br />
+        <h2>
+		Info
+		
+		</h2>
+		<br />
+        <a id="about"></a>
+        <div class="page-padding"></div>
+
+		
+		<img alt="man" id="ImgMan" src="Man-16.svg" height="256" width="256" />
+		<br />
+		
+        A team-oriented Software Engineer with real interest in systems architecture and backend systems, who enjoys to design and build state of the art applications, always trying to find the most efficient solution. My main goal is to keep constantly evolving my knowledge and skills over software development. My eagerness to learn new things, combined with my nature of finding ways in order to satisfy my curiosity about how things work, are my main and most important characteristics. 
+		I currently live and work in Stockholm, Sweden.
+    </div>
+    
+    <div id="pageStudies" align="center">
+        <h2>Studies</h2>
+		<br />
+        <a id="studies"></a>
+        <div class="page-padding"></div>
+		
+		<img alt="studies" id="ImgStudies" src="Mind-Map-Paper.svg" height="256" width="256" /><br />
+		<!--<img alt="studies" id="ImgStudies" src="studies.png" height="256" width="256" /><br />-->
+		I received my BSc at the <a class="simpleURL" href="https://www.ceid.upatras.gr/en">Computer Engineering and Informatics Department</a> at the University Of Patras in Greece. I am also a holder of a MSc in Computer Science and Engineering at the same Department. The outcome of my master was a publication at KES International with title <a class="simpleURL" href="https://ebooks.iospress.nl/publication/7256">WiFi Localization via Particle Filtering and Use For M-commerce</a>. By participating in a big number of different and distinct development projects as a student but also during my professional life, I was given the chance to get deeper and deeper into the much promising fields of software development.
+
+
+    </div> 
+
+    <div id="pageSkills" align="center">
+        <h2>Skills</h2>
+		<br />
+        <a id="skills"></a>
+        <div class="page-padding"></div>
+		<table>
+		<tr>
+		<td>
+		&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+		</td>
+		<td>
+		
+		<canvas id="myChart" width="500" height="500"></canvas>
+		</td>
+		<td>
+		<div id="legend"></div>
+		</td>
+		</tr>
+		</table>
+        
+    </div> 
+	
+    <div id="pageProjects" align="center">
+        <h2 align="center">Projects</h2>
+		<br />
+        <a id="projects"></a>
+        <div class="page-padding"></div>
+
+        <table>
+        <tr>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">Payment <br/> System</span>
+						 
+						<br/> 
+						<img src="Euro-Coin.svg" height="90"/>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Maintenance and development of a system  that is used for the
+administration and payment extraction of more than 25,000 employees <b>SQL, PHP, Javascript</b></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">School <br/> Admin System</span>
+						<br/> 
+						<img src="Man-1.svg" height="90"/>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Development of an Information System  that is used for the administration of Greek expatriate schools over the globe <b>SQL, ASP.NET 4.0 C#</b></p>
+				  </div>
+				</div>			
+			</td>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">Wi-Fi <br/> Localization</span>
+						<br/> 
+						<img src="Application-Map.svg" height="90"/>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Design and development of a WiFi Localization System  which uses WiFi
+hotspots, distributed at various locations in the city of Patras (Greece) <b>Android, Python, XLM-RPC</b></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">Deposits & Loans<br/> Systems</span>
+						<br/> 
+						<img src="graph.svg" height="90"/>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Design and development of Deposits and Loans systems <b>SQL, .NET (WebApi C#), REST, Rebus, React </b></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+        <tr>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">3d <br/> Models</span>
+						<br/> 
+						<img src="Prism-3.svg" height="90"/>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Design of three dimensional and two dimensional computer graphics using <b>Adobe Photoshop</b> and <b>3D Studio Max</b></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">Theatre <br/> Administration</span>
+						<br/> 
+						<img src="Woman-9.svg" height="90"/>
+						<br/> 
+						<span style="font-size:70%;color: #3B97D3;">University Project</span>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Implementation of a theatre reservation system in <b>Java</b></p>
+					
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">Word <br/> Tagger</span>
+						<br/> 
+						<img src="Checklist.svg" height="90"/>
+						<br/> 
+						<span style="font-size:70%;color: #3B97D3;">University Project</span>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Statistical text processing for indexing in <b>C++</b></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">Wordpress Web Development</span>
+						<br/> 
+						<img src="computer.svg" height="90"/>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Design and development of Websites <b>Wordpress, HTML, CSS, Javascript</b></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+        <tr>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">Flat <br/> File System</span>
+						<br/> 
+						<img src="Programming.svg" height="90"/>
+						<br/> 
+						<span style="font-size:70%;color: #3B97D3;">University Project</span>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Implementation of a flat file system in UNIX environment in <b>C</b></p>
+				  </div>
+				</div>
+			</td>
+			<td>
+
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span>DTMF <br/> Tone Generator</span>
+						<br/> 
+						
+						<img src="Microchip.svg" height="90"/>
+						<br/> 
+						<span style="font-size:70%;color: #3B97D3;">University Project</span>
+
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Implementation of a DTMF tones generator with use of <b>ATmega 16</b> microprocessor using PWΜ (Pulse Width Modulation)</p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span>Anti-Theft <br/> App</span>
+						<br/>
+						<img src="Burglar.svg" height="90"/>
+						<br/> 
+						<span style="font-size:70%;color: #3B97D3;">Home Project</span>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;"><b>Android</b> application that uses the accelerometer of the device in order to notify the user by a call to his cell phone</p>
+				  </div>
+				</div>
+			</td>
+			<td>
+				<div id="card" class="card">
+				  <div class="front face" id="front">
+						<span class="frontProjects">Mobile Key<br/>Project</span>
+						<br/> 
+						<img src="chair.svg" height="90"/>
+				  </div>
+				  <div class="back face" id="back">
+					<p style="font-size:70%;">Guest Fast Track project for Hotels (Full digitalized customer journey)<b>.NET Core, SQL, FIAS</b></p>
+				  </div>
+				</div>
+			</td>
+		</tr>
+        </table>  
+
+    </div> 
+
+
+
+
+	
+    <div id="pageContact">
+        <h2 align="center">Contact</h2>
+		<br />
+        <a id="contact"></a> 
+        <div class="page-padding"></div>
+        <table id="socialTable">
+			<tr>
+			<td><a href="https://www.linkedin.com/in/dimitrisvarvaras" target="_blank"><div id="linkedin" class="rotate"><span style="font-size:20px"></span></div></a></td>
+			<!--<td><a href="https://twitter.com/kontotourtas" target="_blank"><div id="twitter" class="rotate"><span style="font-size:20px"></span></div></a></td>-->
+			<td><a href="https://www.facebook.com/dimitri.varvaras.ch" target="_blank"><div id="facebook" class="rotate"><span style="font-size:20px"></span></div></a></td>
+			<td><a href="mailto:varvarasdimitris@gmail.com" target="_blank"><div id="mail" class="rotate"><span style="font-size:20px"></span></div></a></td>
+			<td><a href="https://github.com/varvarasDim" target="_blank"><div id="github" class="rotate"><span style="font-size:20px"></span></div></a></td>
+			</tr>
+        </table>
+    </div> 
+	<br />
+
+</div> 
+
+<!--<img id="scream" width="256" height="256" src="Settings-5.svg" alt="The Scream">-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script>
+
+
+	/*window.onload = function() {
+    var c=document.getElementById("myChart");
+    var ctx1=c.getContext("2d");
+    var img=document.getElementById("scream");
+    ctx1.drawImage(img,10,10);
+	};
+*/
+	var ctx = $("#myChart").get(0).getContext("2d");
+	var options = {
+		//Boolean - Whether we should show a stroke on each segment
+		segmentShowStroke : true,
+
+		//String - The colour of each segment stroke
+		segmentStrokeColor : "#fff",
+
+		//Number - The width of each segment stroke
+		segmentStrokeWidth : 2,
+
+		//Number - The percentage of the chart that we cut out of the middle
+		percentageInnerCutout : 0, // This is 0 for Pie charts
+
+		//Number - Amount of animation steps
+		animationSteps : 100,
+		
+		//String - Template string for single tooltips
+		tooltipTemplate: "<%if (label){%><%=label%><%}%>",
+
+		//String - Animation easing effect
+		animationEasing : "easeOutBounce",
+
+		//Boolean - Whether we animate the rotation of the Doughnut
+		animateRotate : true,
+
+		//Boolean - Whether we animate scaling the Doughnut from the centre
+		animateScale : false,
+
+		//String - A legend template
+		legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%><%}%></li><%}%></ul>"
+	  };
+
+	var data = [
+		{
+			value: 10,
+			color:"#FABC3D",
+			highlight: "#FABC3D",
+			label: "PHP"
+		},
+		{
+			value: 21,
+			color: "#CDB5CD",
+			highlight: "#CDB5CD",
+			label: "SQL"
+		},
+		{
+			value: 10,
+			color: "#5AC9B6",
+			highlight: "#5AC9B6",
+			label: "React"
+		},
+		{
+			value: 20,
+			color: "#25B7D3",
+			highlight: "#25B7D3",
+			label: "Android"
+		},
+		{
+			value: 30,
+			color: "#D4ED91",
+			highlight: "#D4ED91",
+			label: "C#"
+		},
+		{
+			value: 10,
+			color: "#AEC6CF",
+			highlight: "#AEC6CF",
+			label: "C++"
+		},
+		{
+			value: 21,
+			color: "#9C7853",
+			highlight: "#9C7853",
+			label: "Powershell"
+		}
+	  ]
+
+	var myDoughnutChart = new Chart(ctx).Doughnut(data, options);
+	var inView = false;
+
+	function isScrolledIntoView(elem)
+	{
+		var docViewTop = $(window).scrollTop();
+		var docViewBottom = docViewTop + $(window).height();
+
+		var elemTop = $(elem).offset().top;
+		var elemBottom = elemTop + $(elem).height();
+
+		return ((elemTop <= docViewBottom) && (elemBottom >= docViewTop));
+	}
+	
+	$(window).scroll(function() {
+		if (isScrolledIntoView('#myChart')) {
+			if (inView) { return; }
+			inView = true;
+			var myDoughnutChart = new Chart(ctx).Doughnut(data, options);
+		} else {
+			inView = false;  
+		}
+	  });
+  
+	var legend = myDoughnutChart.generateLegend();
+	$("#legend").html(legend);
+	$(document).ready(function() {
+	  function filterPath(string) {
+		return string
+		  .replace(/^\//,'')  
+		  .replace(/(index|default).[a-zA-Z]{3,4}$/,'')  
+		  .replace(/\/$/,'');
+	  }
+
+	$(function() {
+		var $pic = $('#ImgMan'), degree = 0, timer, coef = 1;
+		rotate();
+		function rotate() {
+			$pic.css({ WebkitTransform: 'rotate(' + degree/10 + 'deg)'});  
+			$pic.css({ '-moz-transform': 'rotate(' + degree/10 + 'deg)'});                      
+			if ((degree/10 == 2) || (degree/10 == -2))
+			{
+				coef = -1*coef;
+			}
+			//alert(degree/10);
+			timer = setTimeout(function() {
+				degree=degree+coef; rotate();
+			},40);
+			
+		}
+	  }); 
+  
+	$(function () {
+		setInterval(function () {
+			$('#ImgStudies').animate({opacity: 0.7},2000).animate({opacity: 1},2000);
+		}, 4000);
+	  });
+	  
+
+
+	/*$('#trouble').click(function() {
+		alert('In case you are facing problems with javascript graphics, try to disable hardware acceleration of your browser in use.'); 	
+	});*/
+	
+	
+	$('a[href*=#]').each(function() {
+		if ( filterPath(location.pathname) == filterPath(this.pathname)
+		&& location.hostname == this.hostname
+		&& this.hash.replace(/#/,'') ) {
+		  var $targetId = $(this.hash), $targetAnchor = $('[id=' + this.hash.slice(1) +']');
+		  var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+		   if ($target) {
+			 var targetOffset = $target.offset().top;
+			 $(this).click(function() {
+			   $('html, body').animate({scrollTop: targetOffset-105}, 1000);
+			   return false;
+			 });
+		  }
+		}
+	   });
+	  });
+	  
+
+	  
+	/*$('div#card').click(
+        function () {
+            $(this).toggleClass("flipped");
+        });*/
+	/*$('div#card').hover(
+        function () {
+            $(this).toggleClass("flipped");
+        }, 
+        function () {
+            $(this).toggleClass("flipped");
+        }
+      );*/
+
+</script>
+
+<!-- Start of StatCounter Code for Default Guide -->
+<script type="text/javascript">
+var sc_project=10413409; 
+var sc_invisible=1; 
+var sc_security="d35dcab0"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="shopify
+analytics ecommerce" href="https://statcounter.com/shopify/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/10413409/0/d35dcab0/1/"
+alt="shopify analytics ecommerce"></a></div></noscript>
+<!-- End of StatCounter Code for Default Guide -->
+
+</body>
+</html>
