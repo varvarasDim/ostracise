@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2113.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+    span.Apple-tab-span {white-space:pre}
+  </style>
+</head>
+<body>
+<p class="p1">$darkBlue:#202028;</p>
+<p class="p1">$white: #fff;</p>
+<p class="p1">$transBlack: rgba(0, 0, 0, .65);</p>
+<p class="p2"><br></p>
+<p class="p1">body, html {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-image: url('https://s19.postimg.cc/53hmmyd9f/stars-3000x2000-pink-cosmos-hd-7164.jpg');</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-size: cover;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-repeat: no-repeat;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-position: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color:$white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-family: 'Lucida Console';</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>min-width: 700px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.wrapper {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 1vh 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 1% 1% .5% 1%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: $transBlack;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: -1px 5px 5px rgba(0, 0, 0, .75);;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.modal {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin-top: 20vh !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: solid .05em $white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>box-shadow: -15px 20px 20px rgba(0, 0, 0, .75) !important;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.modal-content {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background: $darkBlue;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.modal-content .btn {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 18px !important;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.modal-content input {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 24px !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 50% !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>text-align: center;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.modal-content label {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 16px !important;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.btn:focus {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #00bfa5 !important;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.btn {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: #009688 !important;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.yourScore {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>padding-bottom: 0px;<span class="Apple-converted-space"> </span></p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.detailsLeft {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>width: 130px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position: relative;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height: 90vh;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin: 0% 2%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-align: right;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space"> </span>}</p>
+<p class="p2"><br></p>
+<p class="p1">.highScores {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position: absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>bottom: 35px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>right: 0px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>line-height: 10px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space"> </span>}</p>
+<p class="p2"><br></p>
+<p class="p1">.detailsRight {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position: relative;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height: 90vh;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>margin: 2% 2% 0% 2%;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>text-align: left;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.next {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height: 15vh;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>border: solid .1em $white;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.controls {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position: absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>bottom: 50px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>left: 0px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>line-height: 8px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.tetris {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>height: 90vh;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>border: solid .25em $white;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.footer {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>position: absolute;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>bottom: 0;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>color: rgba(255, 255, 255, .85);</p>
+<p class="p1"><span class="Apple-tab-span">	</span>line-height: 0px;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.footer a:link, a:visited, a:active {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>color: rgba(255, 255, 255, .85);</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-decoration: none;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">.footer a:link:hover {</p>
+<p class="p1"><span class="Apple-tab-span">	</span>color: white;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>text-decoration: none;</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1">@media (max-width: 920px), (max-height: 800px){</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body, html {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>font-size: 16px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 0px !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>.modal {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 25vw !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin-top: 20vh !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>border: solid .05em $white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>box-shadow: -15px 20px 20px rgba(0, 0, 0, .75) !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>min-width: 500px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-content {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: $darkBlue;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-content .btn {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 14px !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-content input {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 12px !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 50% !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.modal-content label {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-size: 14px !important;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.wrapper {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>display: inline-flex;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: rgba(0, 0, 0, .5) !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding: 0% 0%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>background: $transBlack;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0px !important;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>height: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.detailsLeft {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>height: 80vh;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>width: 110px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>margin: 5% 1% 0% 0%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>}</p>
+<p class="p2"><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span>.score-title {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>font-size: 14px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span>}</p>
+<p class="p2"><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>.highScores {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>line-height: 8px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.detailsRight {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>height: 80vh;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>width: 120px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>margin: 5% 0% 0% 1%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-tab-span">	</span></p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">  </span>.next {</p>
+<p class="p1"><span class="Apple-converted-space">      </span>border: solid .1em $white;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>height: 12vh;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.controls {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>line-height: 8px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p2"><span class="Apple-converted-space">    </span></p>
+<p class="p1"><span class="Apple-converted-space">    </span>.tetris {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-converted-space">    </span>height: 85vh;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>border: solid .25em $white;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>margin-bottom: 2%;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>margin-top: 2%;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>.footer {</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>font-size: 12px;</p>
+<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>}</p>
+<p class="p1">}</p>
+</body>
+</html>
