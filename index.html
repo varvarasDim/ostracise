@@ -1,92 +1,75 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2113.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-    span.Apple-tab-span {white-space:pre}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tetris</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
 </head>
 <body>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Tetris&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="css/style.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="wrapper"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="newGame" class="modal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Tetris&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button onclick="newGame()" id="newGameBtn" class="modal-close waves-effect waves-light btn" style="width:250px"&gt;New Game&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="pause" class="modal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Game Paused&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button onclick="pauseGame()" id="pauseBtn" class="modal-close waves-effect waves-light btn"&gt;Resume Game&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button onclick="newGame()" id="StartNewBtn" class="modal-close waves-effect waves-light btn"&gt;Start New Game&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="gameOver" class="modal"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-content"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Game Over&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;div class="yourScore"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;label for="name"&gt;Submit Your Score&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;br&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;form id="highScore"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;input type="text" id="name" maxlength="7" placeholder="name..." onfocus="this.placeholder = ''" autocomplete="off" required/&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;button type="submit" id="submit" class="waves-effect waves-light btn"&gt;Submit&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;/form&gt;</p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;a onclick="newGame()" class="modal-close waves-effect waves-light btn"&gt;Start New Game&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="detailsLeft"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="score"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="level"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="highScores"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;canvas class="tetris" width="240" height="400"&gt;&lt;/canvas&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="detailsRight"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;canvas class="next" width="160" height="160"&gt;&lt;/canvas&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="controls"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;i class="fas fa-arrow-left"&gt;&lt;/i&gt;&lt;/span&gt; Move Left&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;i class="fas fa-arrow-right"&gt;&lt;/i&gt;&lt;/span&gt; Move Right&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;i class="fas fa-arrow-down"&gt;&lt;/i&gt;&lt;/span&gt; Move Down&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;i class="fas fa-arrow-up"&gt;&lt;/i&gt;&lt;/span&gt; Rotate Right&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;span style="font-size : 18px"&gt;Q&lt;/span&gt; Rotate Left&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;span style="font-size : 18px"&gt;W&lt;/span&gt; Rotate Right&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;span style="font-size: 18px"&gt;Esc&lt;/span&gt; Pause Game&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt; <span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>&lt;div class="footer"&gt;&lt;p&gt;by &lt;a href="https://github.com/dutchbones" target="_blank"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt; Daniel Meeusen&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"&gt;&lt;/script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="js/main.js"&gt;&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <div class="wrapper">
+
+    <div id="newGame" class="modal">
+        <div class="modal-content">
+          <h4>Tetris</h4>
+          <button onclick="newGame()" id="newGameBtn" class="modal-close waves-effect waves-light btn" style="width:250px">New Game</button>
+          </div>
+        </div>
+
+    <div id="pause" class="modal">
+        <div class="modal-content">
+          <h4>Game Paused</h4>
+          <button onclick="pauseGame()" id="pauseBtn" class="modal-close waves-effect waves-light btn">Resume Game</button>
+          <button onclick="newGame()" id="StartNewBtn" class="modal-close waves-effect waves-light btn">Start New Game</button>
+          </div>
+        </div>
+
+    <div id="gameOver" class="modal">
+        <div class="modal-content">
+          <h4>Game Over</h4>
+              <div class="yourScore"></div>
+              <label for="name">Submit Your Score</label>
+              <br><br>
+              <form id="highScore">
+              <input type="text" id="name" maxlength="7" placeholder="name..." onfocus="this.placeholder = ''" autocomplete="off" required/>
+              <button type="submit" id="submit" class="waves-effect waves-light btn">Submit</button>
+              </form>
+					<br>
+              <a onclick="newGame()" class="modal-close waves-effect waves-light btn">Start New Game</a>
+          </div>
+        </div>
+
+    <div class="detailsLeft">
+      <div class="score"></div>
+      <div class="level"></div>
+      <div class="highScores"></div>
+    </div>
+
+    <canvas class="tetris" width="240" height="400"></canvas>
+
+    <div class="detailsRight">
+        <canvas class="next" width="160" height="160"></canvas>
+        <br>
+        <div class="controls">
+          <p><i class="fas fa-arrow-left"></i></span> Move Left</p>
+          <p><i class="fas fa-arrow-right"></i></span> Move Right</p>
+          <p><i class="fas fa-arrow-down"></i></span> Move Down</p>
+          <p><i class="fas fa-arrow-up"></i></span> Rotate Right</p>
+          <p><span style="font-size : 18px">Q</span> Rotate Left</p>
+          <p><span style="font-size : 18px">W</span> Rotate Right</p>
+          <p><span style="font-size: 18px">Esc</span> Pause Game</p>
+        </div>
+      </div>
+			<div class="footer"><p>by <a href="https://github.com/dutchbones" target="_blank"><i class="fab fa-github"></i> Daniel Meeusen</a></p></div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 </html>
